@@ -1,12 +1,10 @@
-# virtual environment
+# virtual environments
 .venv/
+.venv311/
 
 # python cache
 __pycache__/
 *.pyc
 
-# jupyter checkpoints
+# jupyter
 .ipynb_checkpoints/
-
-# mac junk
-.DS_Store

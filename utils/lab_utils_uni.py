@@ -1,5 +1,5 @@
 """ 
-lab_utils_uni.py
+utils.lab_utils_uni.py
     routines used in Course 1, Week2, labs1-3 dealing with single variables (univariate)
 """
 import numpy as np
@@ -8,10 +8,11 @@ from matplotlib.ticker import MaxNLocator
 from matplotlib.gridspec import GridSpec
 from matplotlib.colors import LinearSegmentedColormap
 from ipywidgets import interact
-from lab_utils_common import compute_cost
-from lab_utils_common import dlblue, dlorange, dldarkred, dlmagenta, dlpurple, dlcolors
+from utils.lab_utils_common import compute_cost
+from utils.lab_utils_common import dlblue, dlorange, dldarkred, dlmagenta, dlpurple, dlcolors
+from pathlib import Path
+plt.style.use(str(Path(__file__).resolve().parent.parent / "deeplearning.mplstyle"))
 
-plt.style.use('./deeplearning.mplstyle')
 n_bin = 5
 dlcm = LinearSegmentedColormap.from_list(
         'dl_map', dlcolors, N=n_bin)
